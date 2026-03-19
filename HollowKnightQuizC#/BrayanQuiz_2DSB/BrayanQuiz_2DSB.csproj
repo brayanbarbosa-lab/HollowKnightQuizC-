@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71D47F66-B60E-465B-A11F-92516855DFFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BrayanQuiz_2DSB</RootNamespace>
+    <AssemblyName>BrayanQuiz_2DSB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contagem.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta1.Designer.cs">
+      <DependentUpon>pergunta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta10.Designer.cs">
+      <DependentUpon>pergunta10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta2.Designer.cs">
+      <DependentUpon>pergunta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta3.Designer.cs">
+      <DependentUpon>pergunta3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta4.Designer.cs">
+      <DependentUpon>pergunta4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta5.Designer.cs">
+      <DependentUpon>pergunta5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta6.Designer.cs">
+      <DependentUpon>pergunta6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta7.Designer.cs">
+      <DependentUpon>pergunta7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta8.Designer.cs">
+      <DependentUpon>pergunta8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pergunta9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pergunta9.Designer.cs">
+      <DependentUpon>pergunta9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\pergunta4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\pergunta4.Designer.cs">
+      <DependentUpon>pergunta4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resultado.Designer.cs">
+      <DependentUpon>resultado.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta1.resx">
+      <DependentUpon>pergunta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta10.resx">
+      <DependentUpon>pergunta10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta2.resx">
+      <DependentUpon>pergunta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta3.resx">
+      <DependentUpon>pergunta3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta4.resx">
+      <DependentUpon>pergunta4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta5.resx">
+      <DependentUpon>pergunta5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta6.resx">
+      <DependentUpon>pergunta6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta7.resx">
+      <DependentUpon>pergunta7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta8.resx">
+      <DependentUpon>pergunta8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pergunta9.resx">
+      <DependentUpon>pergunta9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\pergunta4.resx">
+      <DependentUpon>pergunta4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resultado.resx">
+      <DependentUpon>resultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\zote.jpg_large" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-hollow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITULO-HOLLOW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-hollow1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hollow-Knight-Logo-PNG-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERGUNTA 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paiaco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cornifer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sombras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caminhoverde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ctolos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ctolos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\besouro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\larva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quirrel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vitória.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perdeu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\errado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaia.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aplauso.mp3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
